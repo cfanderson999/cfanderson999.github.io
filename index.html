@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carl Anderson | Personal Site</title>
+    <meta
+      name="description"
+      content="Personal website of Carl Anderson — silicon design engineer, researcher, and open source contributor."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#about" class="brand">Carl Anderson</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#rocketry">Rocketry</a>
+          <a href="#projects">Projects</a>
+          <a href="#publications">Research</a>
+          <a href="#work">Work & Education</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section id="about" class="hero container section reveal tab-panel is-active">
+        <p class="eyebrow">DFT RTL · AMD · Fort Collins, CO</p>
+        <p class="hero-copy">
+          I currently work as an RTL engineer at AMD, focused on DFT for
+          next-generation x86-64 CPU cache. My background includes IEEE-published hardware
+          security research, avionics leadership on the University of Minnesota Rocket
+          Team, and ongoing development of open-source ballistics simulation tools for hobby rocketry.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-ghost" href="files/Carl_Anderson_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+        </div>
+        <div class="contact-list" aria-label="Contact links">
+          <button class="contact-item contact-item-copy" type="button" data-email-user="cfanderson999" data-email-domain="gmail.com">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4 6h16v12H4z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <path d="m5 7 7 6 7-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="contact-item-label">&mdash; cfanderson999agmail.com</span>
+          </button>
+          <a class="contact-item" href="https://github.com/cfanderson999" target="_blank" rel="noopener">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <path d="M9.5 18c0-2-.5-3-1.8-3.8-1-.7-1.7-1.8-1.7-3.2A4.9 4.9 0 0 1 11 6.2c.4 0 .7 0 1 .1.3-.1.6-.1 1-.1a4.9 4.9 0 0 1 5 4.8c0 1.4-.6 2.5-1.7 3.2C15 15 14.5 16 14.5 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M9.5 10.5c.4-.3.8-.5 1.3-.5.5 0 .9.2 1.2.5.3-.3.7-.5 1.2-.5.5 0 1 .2 1.3.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <span>&mdash; github.com/cfanderson999</span>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/cfanderson" target="_blank" rel="noopener">
+            <svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="4" y="4" width="16" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="8" cy="10" r="1.1" fill="currentColor"/>
+              <path d="M7.2 12.2v4.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M11.2 16.8v-4.6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M11.2 13.5c0-1 1-1.8 2.1-1.8 1.3 0 2.2.8 2.2 2.6v2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>&mdash; linkedin.com/cfanderson</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="work" class="container section reveal tab-panel">
+        <div class="timeline">
+          <div class="section-divider">
+            <h3>Work Experience</h3>
+          </div>
+          <article class="card timeline-item">
+            <h3>Silicon Design Engineer II · AMD</h3>
+            <p class="meta">Jul 2024 - Present · Longmont, CO</p>
+            <p>
+              Full-time on-site silicon design engineering role focused on RTL-driven
+              development for production hardware programs.
+            </p>
+          </article>
+          <article class="card timeline-item">
+            <h3>RTL Design Engineer Co-op · AMD</h3>
+            <p class="meta">Jan 2023 - Aug 2023 · Boxborough, MA</p>
+            <p>
+              Worked on load/store unit RTL for a next-generation high-performance x86 CPU
+              core. Designed SystemVerilog RTL and performed verification using Synopsys
+              Verdi, and used formal equivalence flows to validate RTL changes supporting
+              downstream power and timing objectives.
+            </p>
+          </article>
+          <article class="card timeline-item">
+            <h3>Firmware Engineer Intern · Hewlett Packard Enterprise</h3>
+            <p class="meta">May 2021 - Sep 2022 · Bloomington, MN</p>
+            <p>
+              Developed JTAG drivers for ASIC bring-up DFT functions including MBIST,
+              ALLSCAN, and clock observation. Also wrote C firmware on FreeRTOS for
+              Slingshot network devices and built Python regression tooling to track HPC
+              system performance and detect faults over time.
+            </p>
+          </article>
+          <article class="card timeline-item">
+            <h3>Undergraduate Research Assistant · University of Minnesota</h3>
+            <p class="meta">Aug 2021 - Nov 2023 · Minneapolis, MN</p>
+            <p>
+              Conducted UROP-funded hardware security research under Professor Keshab
+              Parhi, resulting in an IEEE MWSCAS 2023 publication. See Publications below.
+            </p>
+          </article>
+          <article class="card timeline-item">
+            <h3>Avionics Lead · University of Minnesota Rocket Team</h3>
+            <p class="meta">May 2021 - Jul 2023 · Minneapolis, MN</p>
+            <p>
+              Led a 15-person avionics team with an annual budget of about $3,300, driving
+              integration of active controls and state-estimation features into a reusable
+              flight computer platform. Oversaw radar and custom GPS receiver development
+              for apogee determination and wrote technical documentation for competition
+              reporting. Team outcomes included winning IREC in 2021 and winning the 30K
+              Student Research and Developed Motor category at IREC in 2023 and 2024.
+            </p>
+          </article>
+          <div class="section-divider">
+            <h3>Education</h3>
+          </div>
+          <article class="card timeline-item">
+            <h3>University of Minnesota · MS, Electrical and Computer Engineering</h3>
+            <p class="meta">Apr 2021 - May 2024</p>
+          </article>
+          <article class="card timeline-item">
+            <h3>University of Minnesota · BE, Computer Engineering</h3>
+            <p class="meta">2019 - 2022</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="container section reveal tab-panel">
+        <div class="timeline">
+          <article class="card timeline-item">
+            <div class="card-media">
+              <div class="card-media-body">
+                <h3>Analysis of Molecular MUX PUFs with Stochastic Challenges</h3>
+                <p class="meta">IEEE MWSCAS 2023 · 66th International Midwest Symposium on Circuits and Systems</p>
+                <p>
+                  Physical unclonable functions (PUFs) are small circuits used as hardware
+                  security primitives for authentication, generating unique signatures from
+                  inherent manufacturing variation. This paper analyzes a novel stochastic
+                  molecular multiplexer PUF for authentication in biosecurity applications
+                  where PUFs are implemented using bio-substrate rather than electronic means.
+                  UROP-funded research conducted under Professor Keshab Parhi at the University of Minnesota.
+                </p>
+                <a href="https://doi.org/10.1109/MWSCAS57524.2023.10405849" target="_blank" rel="noopener">View on IEEE Xplore (DOI)</a>
+              </div>
+              <div class="card-media-visual card-media-visual--fit-width">
+                <img src="img/DNAPUF.png" alt="Molecular MUX PUF diagram" class="card-media-img">
+              </div>
+            </div>
+          </article>
+          <article class="card timeline-item">
+            <div class="card-media">
+              <div class="card-media-body">
+                <h3>UROP Symposium</h3>
+                <p class="meta">UMN Undergraduate Research Symposium · Spring 2022</p>
+                <p>
+                  Symposium poster covering the stochastic molecular MUX PUF research,
+                  delivered at the University of Minnesota Undergraduate Research Opportunities
+                  Program symposium.
+                </p>
+                <a href="files/UROP_Symposium_Presentation.pdf" target="_blank" rel="noopener">View Poster</a>
+              </div>
+              <div class="card-media-visual card-media-visual--wide card-media-visual--fit-width">
+                <img src="img/muxPUF.png" alt="Molecular MUX PUF diagram" class="card-media-img">
+              </div>
+            </div>
+          </article>
+          <article class="card timeline-item">
+            <h3>Hyperdimensional Computing For Multivariate Anomaly Detection</h3>
+            <p class="meta">University of Minnesota Research</p>
+            <p>
+              Developed hybrid hyperdimensional computing and deep learning models for
+              multivariate anomaly detection, improving accuracy by 1.11% and sensitivity
+              by 4.88% over prior state-of-the-art methods.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="container section reveal tab-panel">
+        <div class="timeline">
+          <article class="card timeline-item">
+            <div class="card-media">
+              <div class="card-media-body">
+                <h3>High-Speed CMOS Ising Machine Accelerator Platform</h3>
+                <p>
+                  Led a five-person senior design team (Spring 2023) across hardware and software.
+                  We designed the on-board PCB and FPGA pipeline, built software to write
+                  optimization problems into the FPGA, and implemented parallel programming of
+                  COBI (CMOS Oscillator-Based Ising Computer) chips with scan-out of solutions
+                  to increase throughput and overall parallelism. Increased solution throughput by 71240x
+                  and decreased power consumption per solution by 99.9928% per solutin versus previous approach.
+                </p>
+              </div>
+              <div class="card-media-visual">
+                <img src="img/cobi.png" alt="COBI ising machine platform" class="card-media-img">
+              </div>
+            </div>
+          </article>
+          <article class="card timeline-item">
+            <div class="card-media">
+              <div class="card-media-body">
+                <h3>Deep Learning 5-Port Pitot Probe</h3>
+                <p>
+                  Collaborated with another student to build and calibrate a 5-hole pitot-static
+                  probe for IREC 2023 with a focus on deep-learning calibration.
+                  I tuned
+                  models that mapped raw pressure sensor outputs to Mach number, angle of attack,
+                  and sideslip using wind-tunnel data, including leave-one-out cross-validation,
+                  covariance-based data augmentation, regularization, and hyperparameter tuning.
+                  Final model performance reached about 0.035 RMSD for Mach and 1.11/0.957
+                  degrees RMSD for angle of attack/sideslip.
+                </p>
+                <a href="files/Team 130 Technical Presentation to the 2023 Spaceport America Cup.pdf" target="_blank" rel="noopener">Abstract</a>
+              </div>
+              <div class="card-media-visual">
+                <img src="img/pitotTube.jpg" alt="5-port pitot probe" class="card-media-img">
+              </div>
+            </div>
+          </article>
+          <article class="card timeline-item">
+            <h3>Hierarchical Re-reference Interval Prediction (HRRIP) Caching Policy</h3>
+            <p>
+              Developed a cache replacement policy variant in ChampSim for Advanced Computer
+              Architecture (Fall 2023) that used a binary-search hierarchy to classify
+              re-reference intervals faster and reduce miss-handling latency. The approach
+              delivered up to 8% IPC uplift with lower hardware overhead versus baseline
+              RRIP-style policies.
+            </p>
+          </article>
+        </div>
+      </section>
+
+
+
+      <section id="rocketry" class="container section reveal tab-panel">
+        <div class="timeline">
+          <article class="card timeline-item">
+            <div class="card-media">
+              <div class="card-media-body">
+                <h3>openPEP</h3>
+                <p>
+                  Developed openPEP, an open-source Python project for hobby
+                  rocketry propellant formulation. It optimizes the rheology of multimodal
+                  particle suspensions, integrates NASA CEA-based thermochemical analysis,
+                  and includes binder liquid-mix calculation tooling.
+                </p>
+                <a href="https://github.com/cfanderson999/openPEP" target="_blank" rel="noopener">View on GitHub</a>
+              </div>
+              <div class="card-media-visual">
+                <img src="img/openPEP.png" alt="openPEP rheology optimization interface" class="card-media-img">
+              </div>
+            </div>
+          </article>
+          <article class="card timeline-item">
+            <div class="card-media">
+              <div class="card-media-body">
+                <h3>miniMagSwitch</h3>
+                <p>
+                  A 12×12mm magnetic switch designed for high power rocketry. Toggle on/off with
+                  a neodymium magnet; includes reverse polarity protection, onboard status LED,
+                  and 1–4s LiPo compatibility. Designed for full JLCPCB PCB assembly.
+                </p>
+                <a href="https://github.com/cfanderson999/miniMagSwitch" target="_blank" rel="noopener">View on GitHub</a>
+              </div>
+              <div class="card-media-visual">
+                <img src="img/miniMagSwitch.jpg" alt="miniMagSwitch PCB" class="card-media-img">
+              </div>
+            </div>
+          </article>
+          <article class="card timeline-item">
+            <h3>openMotor Contributor</h3>
+            <p>
+              Open source contributor to <a href="https://github.com/reilleya/openMotor" target="_blank" rel="noopener">openMotor</a>,
+              an internal ballistics simulator for solid rocket motor experimenters. Key contributions include internal mach number
+              calculation to predict failures and minor improvements to plotting and UX.
+            </p>
+            <ul>
+              <li>Per-grain core Mach number tracking (<a href="https://github.com/reilleya/openMotor/pull/239" target="_blank" rel="noopener">#239</a>)</li>
+              <li>Conical grain geometry fixes (<a href="https://github.com/reilleya/openMotor/pull/241" target="_blank" rel="noopener">#241</a>)</li>
+              <li>Core Mach calculation corrections (<a href="https://github.com/reilleya/openMotor/pull/243" target="_blank" rel="noopener">#243</a>, <a href="https://github.com/reilleya/openMotor/pull/248" target="_blank" rel="noopener">#248</a>)</li>
+              <li>Parameterized physical simulation limits (<a href="https://github.com/reilleya/openMotor/pull/251" target="_blank" rel="noopener">#251</a>)</li>
+              <li>Dual-axis result plotting (<a href="https://github.com/reilleya/openMotor/pull/255" target="_blank" rel="noopener">#255</a>)</li>
+              <li>NozzleCoeffTool — back-calculate throat erosion and slag coefficients from test data (<a href="https://github.com/reilleya/openMotor/pull/263" target="_blank" rel="noopener">#263</a>)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
