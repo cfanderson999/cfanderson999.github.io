@@ -372,6 +372,16 @@ a {
   object-fit: contain;
 }
 
+.card-media-visual--text-height {
+  position: relative;
+}
+
+.card-media-visual--text-height .card-media-img {
+  position: absolute;
+  inset: 0;
+  object-position: 58% 45%;
+}
+
 .card-media-body {
   flex: 1;
   display: flex;
@@ -475,6 +485,14 @@ a {
 
   .card-media-img {
     height: auto;
+  }
+
+  .card-media-visual--text-height {
+    aspect-ratio: 16 / 10;
+  }
+
+  .card-media-visual--text-height .card-media-img {
+    height: 100%;
   }
 
   .card-media-body {
